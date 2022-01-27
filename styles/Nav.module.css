@@ -1,0 +1,11 @@
+.nav {
+  background: black;
+  display: flex;
+  color: white;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
