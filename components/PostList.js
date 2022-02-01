@@ -1,14 +1,13 @@
 import React from "react";
 import styles from "../styles/PostList.module.css";
+import PostCard from "./PostCard";
 
 const Postlist = ({ posts }) => {
   return (
     <div className={styles.grid}>
       {posts.map((post) => (
-        <>
-          <h2>{post.title}</h2>
-          <p>{post.body}</p>
-        </>
+        <PostCard key={post.id} post={post} />
+        // <div>{post.id}</div>
       ))}
     </div>
   );

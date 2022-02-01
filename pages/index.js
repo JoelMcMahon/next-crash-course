@@ -1,12 +1,11 @@
 import Head from "next/head";
+import Meta from "../components/Meta";
 import PostList from "../components/PostList";
 
 export default function Home({ posts }) {
   return (
     <div>
-      <Head>
-        <title>Home</title>
-      </Head>
+      <Meta title="Home" />
       <h1>Welcome To NextJS</h1>
       <PostList posts={posts}></PostList>
     </div>
